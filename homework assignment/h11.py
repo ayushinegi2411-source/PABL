@@ -3,11 +3,11 @@
 def is_subset(a, b):
     freq = {}
 
-    # Count elements of a
+   
     for num in a:
         freq[num] = freq.get(num, 0) + 1
 
-    # Check elements of b
+   
     for num in b:
         if num not in freq or freq[num] == 0:
             return False
